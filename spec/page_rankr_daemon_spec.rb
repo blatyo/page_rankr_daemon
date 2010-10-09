@@ -34,4 +34,18 @@ describe PageRankrDaemon do
       last_response.headers['Content-Type'].should eql('application/json')
     end
   end
+  
+  context "when responding to /backlinks?url=http://www.google.com" do
+    before :each do
+      get "/backlinks?url=http://www.google.com"
+    end
+    
+    it "should be ok" do
+      last_response.should be_ok
+    end
+    
+    it "should have a content type of json" do
+      last_response.headers['Content-Type'].should eql('application/json')
+    end
+  end
 end
