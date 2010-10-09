@@ -15,6 +15,7 @@ Gem::Specification.new do |s|
   s.rubyforge_project         = "page_rankr_daemon"
   s.add_dependency             "thin", "~> 1.2.7"
   s.add_dependency             "sinatra", "~> 1.0"
+  s.add_dependency             "json", "~> 1.4.6"
   s.add_dependency             "PageRankr", "~> 1.4.3"
   s.add_development_dependency "bundler", ">= 1.0.0"
   s.add_development_dependency "rspec", "= 2.0.0.rc"
