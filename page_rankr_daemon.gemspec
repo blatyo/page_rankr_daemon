@@ -5,15 +5,17 @@ Gem::Specification.new do |s|
   s.name        = "page_rankr_daemon"
   s.version     = PageRankrDaemon::VERSION
   s.platform    = Gem::Platform::RUBY
-  s.authors     = []
-  s.email       = []
+  s.authors     = ["Allen Madsen"]
+  s.email       = ["blatyo@gmail.com"]
   s.homepage    = "http://rubygems.org/gems/page_rankr_daemon"
-  s.summary     = "TODO: Write a gem summary"
-  s.description = "TODO: Write a gem description"
+  s.summary     = "A PageRankr skinny daemon."
+  s.description = "A PageRankr skinny daemon. A server gem that provides page rank info."
 
   s.required_rubygems_version = ">= 1.3.6"
   s.rubyforge_project         = "page_rankr_daemon"
-
+  s.add_dependency             "thin", "~> 1.2.7"
+  s.add_dependency             "sinatra", "~> 1.0"
+  s.add_dependency             "PageRankr", "~> 1.4.3"
   s.add_development_dependency "bundler", ">= 1.0.0"
 
   s.files        = `git ls-files`.split("\n")

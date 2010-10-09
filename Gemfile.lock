@@ -1,0 +1,33 @@
+PATH
+  remote: .
+  specs:
+    page_rankr_daemon (0.0.1)
+      PageRankr (~> 1.4.3)
+      sinatra (~> 1.0)
+      thin (~> 1.2.7)
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    PageRankr (1.4.3)
+      nokogiri (>= 1.4.1)
+    daemons (1.1.0)
+    eventmachine (0.12.10)
+    nokogiri (1.4.3.1)
+    rack (1.2.1)
+    sinatra (1.0)
+      rack (>= 1.0)
+    thin (1.2.7)
+      daemons (>= 1.0.9)
+      eventmachine (>= 0.12.6)
+      rack (>= 1.0.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  PageRankr (~> 1.4.3)
+  bundler (>= 1.0.0)
+  page_rankr_daemon!
+  sinatra (~> 1.0)
+  thin (~> 1.2.7)
