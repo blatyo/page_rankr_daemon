@@ -17,8 +17,11 @@ Gem::Specification.new do |s|
   s.add_dependency             "sinatra", "~> 1.0"
   s.add_dependency             "PageRankr", "~> 1.4.3"
   s.add_development_dependency "bundler", ">= 1.0.0"
+  s.add_development_dependency "rspec", "= 2.0.0.rc"
+  s.add_development_dependency "rack-test", "~> 0.5.6"
 
   s.files        = `git ls-files`.split("\n")
+  s.test_files   = `git ls-files`.split("\n").map{|f| f =~ /^spec\/(.*)/ ? $1 : nil}.compact
   s.executables  = `git ls-files`.split("\n").map{|f| f =~ /^bin\/(.*)/ ? $1 : nil}.compact
   s.require_path = 'lib'
 end
