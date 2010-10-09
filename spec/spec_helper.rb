@@ -4,6 +4,7 @@ require 'rubygems'
 require 'sinatra'
 require 'rack/test'
 require 'rspec'
+require 'page_rankr'
 
 # set test environment
 set :environment, :test
